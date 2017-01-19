@@ -8,7 +8,7 @@
 return [
     'name' => "suxiongye's blog",
     'title' => 'My Blog',
-    'subtitle' => 'https://suxiongye.cn',
+    'subtitle' => 'https://www.suxiongye.cn',
     'description' => 'Personal blog for learning.',
     'author' => "suxiongye",
     "page_image" => 'home-bg.jpg',

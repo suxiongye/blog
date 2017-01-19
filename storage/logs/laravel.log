@@ -8193,3 +8193,63 @@ Stack trace:
 #40 /var/www/html/blog/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(117): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
 #41 /var/www/html/blog/public/index.php(53): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
 #42 {main}  
+[2017-01-19 08:11:43] local.ERROR: RuntimeException: The only supported ciphers are AES-128-CBC and AES-256-CBC with the correct key lengths. in /var/www/blog/bootstrap/cache/compiled.php:13510
+Stack trace:
+#0 /var/www/blog/bootstrap/cache/compiled.php(7917): Illuminate\Encryption\Encrypter->__construct('', 'AES-256-CBC')
+#1 /var/www/blog/bootstrap/cache/compiled.php(1477): Illuminate\Encryption\EncryptionServiceProvider->Illuminate\Encryption\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 /var/www/blog/bootstrap/cache/compiled.php(1433): Illuminate\Container\Container->build(Object(Closure), Array)
+#3 /var/www/blog/bootstrap/cache/compiled.php(2011): Illuminate\Container\Container->make('encrypter', Array)
+#4 /var/www/blog/bootstrap/cache/compiled.php(1534): Illuminate\Foundation\Application->make('encrypter')
+#5 /var/www/blog/bootstrap/cache/compiled.php(1511): Illuminate\Container\Container->resolveClass(Object(ReflectionParameter))
+#6 /var/www/blog/bootstrap/cache/compiled.php(1497): Illuminate\Container\Container->getDependencies(Array, Array)
+#7 /var/www/blog/bootstrap/cache/compiled.php(1433): Illuminate\Container\Container->build('App\\Http\\Middle...', Array)
+#8 /var/www/blog/bootstrap/cache/compiled.php(2011): Illuminate\Container\Container->make('App\\Http\\Middle...', Array)
+#9 /var/www/blog/bootstrap/cache/compiled.php(10054): Illuminate\Foundation\Application->make('App\\Http\\Middle...')
+#10 /var/www/blog/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(33): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#11 /var/www/blog/bootstrap/cache/compiled.php(10044): Illuminate\Routing\Pipeline->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#12 /var/www/blog/bootstrap/cache/compiled.php(8346): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#13 /var/www/blog/bootstrap/cache/compiled.php(8337): Illuminate\Routing\Router->runRouteWithinStack(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request))
+#14 /var/www/blog/bootstrap/cache/compiled.php(8328): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#15 /var/www/blog/bootstrap/cache/compiled.php(2575): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 /var/www/blog/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\Foundation\Http\Kernel->Illuminate\Foundation\Http\{closure}(Object(Illuminate\Http\Request))
+#17 /var/www/blog/bootstrap/cache/compiled.php(3374): Illuminate\Routing\Pipeline->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#18 /var/www/blog/bootstrap/cache/compiled.php(10059): Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode->handle(Object(Illuminate\Http\Request), Object(Closure))
+#19 /var/www/blog/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(33): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#20 /var/www/blog/bootstrap/cache/compiled.php(10044): Illuminate\Routing\Pipeline->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#21 /var/www/blog/bootstrap/cache/compiled.php(2519): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#22 /var/www/blog/bootstrap/cache/compiled.php(2503): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#23 /var/www/blog/public/index.php(53): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#24 {main}  
+[2017-01-19 08:11:43] local.ERROR: RuntimeException: The only supported ciphers are AES-128-CBC and AES-256-CBC with the correct key lengths. in /var/www/blog/bootstrap/cache/compiled.php:13510
+Stack trace:
+#0 /var/www/blog/bootstrap/cache/compiled.php(7917): Illuminate\Encryption\Encrypter->__construct('', 'AES-256-CBC')
+#1 /var/www/blog/bootstrap/cache/compiled.php(1477): Illuminate\Encryption\EncryptionServiceProvider->Illuminate\Encryption\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 /var/www/blog/bootstrap/cache/compiled.php(1433): Illuminate\Container\Container->build(Object(Closure), Array)
+#3 /var/www/blog/bootstrap/cache/compiled.php(2011): Illuminate\Container\Container->make('encrypter', Array)
+#4 /var/www/blog/bootstrap/cache/compiled.php(1534): Illuminate\Foundation\Application->make('encrypter')
+#5 /var/www/blog/bootstrap/cache/compiled.php(1511): Illuminate\Container\Container->resolveClass(Object(ReflectionParameter))
+#6 /var/www/blog/bootstrap/cache/compiled.php(1497): Illuminate\Container\Container->getDependencies(Array, Array)
+#7 /var/www/blog/bootstrap/cache/compiled.php(1433): Illuminate\Container\Container->build('App\\Http\\Middle...', Array)
+#8 /var/www/blog/bootstrap/cache/compiled.php(2011): Illuminate\Container\Container->make('App\\Http\\Middle...', Array)
+#9 /var/www/blog/bootstrap/cache/compiled.php(2529): Illuminate\Foundation\Application->make('App\\Http\\Middle...')
+#10 /var/www/blog/public/index.php(58): Illuminate\Foundation\Http\Kernel->terminate(Object(Illuminate\Http\Request), Object(Illuminate\Http\Response))
+#11 {main}  
+[2017-01-19 08:12:03] local.ERROR: Symfony\Component\Console\Exception\CommandNotFoundException: There are no commands defined in the "generate" namespace. in /var/www/blog/vendor/symfony/console/Application.php:488
+Stack trace:
+#0 /var/www/blog/vendor/symfony/console/Application.php(520): Symfony\Component\Console\Application->findNamespace('generate')
+#1 /var/www/blog/vendor/symfony/console/Application.php(182): Symfony\Component\Console\Application->find('generate:key')
+#2 /var/www/blog/vendor/symfony/console/Application.php(116): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /var/www/blog/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(121): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 /var/www/blog/artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 {main}  
+[2017-01-19 08:12:06] local.ERROR: Symfony\Component\Console\Exception\CommandNotFoundException: Command "generate" is not defined.
+
+Did you mean one of these?
+    key:generate
+    event:generate in /var/www/blog/vendor/symfony/console/Application.php:534
+Stack trace:
+#0 /var/www/blog/vendor/symfony/console/Application.php(182): Symfony\Component\Console\Application->find('generate')
+#1 /var/www/blog/vendor/symfony/console/Application.php(116): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 /var/www/blog/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(121): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /var/www/blog/artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 {main}  
