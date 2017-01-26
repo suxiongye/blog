@@ -11,7 +11,8 @@
         "michelf/php-smartypants": "1.7.0",
         "dflydev/apache-mime-types": "^1.0",
         "doctrine/dbal": "^2.5",
-        "alt-three/bus": "^2.1"
+        "alt-three/bus": "^2.1",
+        "suin/php-rss-writer": "^1.5"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
