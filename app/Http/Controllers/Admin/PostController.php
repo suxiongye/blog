@@ -64,8 +64,7 @@ class PostController extends Controller
         $post = Post::create($request->postFillData());
         $post->syncTags($request->get('tags', []));
 
-        return redirect()
-            ->route('admin.post.index')
+        return redirect('/admin/post')
             ->withSuccess('New Post Successfully Created.');
     }
 
